@@ -32,13 +32,14 @@ def menu_comprador_prueba():
             print(precioA, "$")
             resp = input("¿Desea comprar alguno de estos dispositivos?\n>>>")
             if resp == "si":
-                respuesta = ("Ingrese el celular que ha elegido comprar\n>>>")
+                respuesta = (input("Ingrese el celular que ha elegido comprar\n>>>"))
+
                 if respuesta in (lista_cel):
-                    print(f"El celular que ha elegido comprar fue {respuesta}, solicitelo con ese nombre en la caja")
-                    print("-----------------------------------------------------------------------------------------------------------------")
-                    print("          FELICIDADES POR COMPRAR SU CELULAR NUEVO, ACERQUESE A LA CAJA PARA SOLICITARLO Y ABONARLO              ")
-                    print("         GRACIAS POR USAR EL PROGRAMA DE COMPRA DE TELEFONOS CELULARES, ESPERAMOS TE HAYA RESULTADO UTIL         ")
-                    print("-----------------------------------------------------------------------------------------------------------------")
+                        print(f"El celular que ha elegido comprar fue {respuesta}, solicitelo con ese nombre en la caja")
+                        print("-----------------------------------------------------------------------------------------------------------------")
+                        print("          FELICIDADES POR COMPRAR SU CELULAR NUEVO, ACERQUESE A LA CAJA PARA SOLICITARLO Y ABONARLO              ")
+                        print("         GRACIAS POR USAR EL PROGRAMA DE COMPRA DE TELEFONOS CELULARES, ESPERAMOS TE HAYA RESULTADO UTIL         ")
+                        print("-----------------------------------------------------------------------------------------------------------------")
                 else:
                     print("Lo sentimos, ese dispositivo no se encuentra en la lista, intentelo de nuevo")
             else:
